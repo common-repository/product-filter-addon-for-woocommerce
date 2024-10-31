@@ -1,0 +1,238 @@
+/*
+styles
+sorting top items
+copywright by nsstheme
+*/
+.nss-form-filter{
+    position: relative;
+    -webkit-box-shadow: 0 1px 10px -6px #777;
+    -moz-box-shadow: 0 1px 10px -6px #777;
+    box-shadow: 0 1px 10px -6px #777;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.nss-form-filter form{
+    position: relative;
+}
+.nss-form-filter form [class^="nss-select-option"],
+.nss-form-filter form .nss-select-button{
+    display: inline-block;
+}
+.nss-form-filter form [class^="nss-select-option"]{
+    position: relative;
+    height: 43px;
+    border: 1px solid #ccc;
+}
+.nss-form-filter form [class^="nss-select-option"]:before{
+    position: absolute;
+    content: '';
+    top: 17px;
+    right: 6px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #222;
+}
+.nss-form-filter form [class^="nss-select-option"] select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color:#232323;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    outline: 0;
+}
+.nss-form-filter form [class^="nss-select-option"] select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #222;
+}
+.nss-form-filter form .nss-select-button button{
+    font-size: 14px;
+    font-weight: 400;
+    color:#fff;
+    background: #232323;
+    padding: 12px 40px;
+    border-radius: 0;
+    border:none;
+    transition:all .2s linear;
+}
+.nss-form-filter form .nss-select-button button:hover{
+    background: #000;
+}
+/*style details*/
+.nss-content-page-products{
+    width: 100%;
+}
+.nss-content-page-products ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.nss-content-page-products ul li{
+    position: relative;
+    display: inline-block;
+    padding-bottom:30px;
+    list-style: none;
+    text-decoration: none;
+    margin: 0 15px 0 0;
+    width:20%;
+}
+.product_type_external{
+
+}
+.nss-content-page-products ul li .onsale {
+    background: #ccc;
+    color: #222;
+    font-size: 12px;
+    font-style: normal;
+    text-decoration: none;
+}
+.product-info-wrap {
+    border-top:.2px solid #fff;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    padding: 15px 15px 30px;
+}
+.product-img-wrap img {
+    display: block;
+}
+.product-img-wrap-inner{
+    position: relative;
+}
+.product-img-wrap-inner .onsale{
+    position: absolute;
+    top:0;
+    padding:4px 10px;
+}
+.product-info-wrap .info{
+    position: relative;
+    margin-bottom: 20px;
+}
+.product-info-wrap .info a{
+    display: block;
+    font-size:20px;
+    font-weight: 500;
+    outline: none;
+    color:#222;
+    transition: all .2s linear;
+}
+.product-info-wrap .info a:hover{
+    color:#ccc;
+}
+.product-info-wrap .addtoCart a {
+    margin: 30px auto 20px;
+    padding: 8px 18px;
+    border-radius: 0;
+    font-size: 13px;
+    font-weight: 400;
+    background: #222;
+    color:#fff;
+    text-transform: uppercase;
+    outline: none;
+    border:none;
+    transition: all .2s linear;
+}
+.product-info-wrap .addtoCart a:hover{
+    background:#000;
+}
+.product-info-wrap .addtoCart{
+    position: relative;
+}
+.product-info-wrap .addtoCart a.added_to_cart{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    bottom: 24%;
+    padding: 16px;
+    color:#fff;
+}
+/*media query*/
+@media (min-width: 1281px) { 
+    .nss-content-page-products ul li{
+        margin: 0 15px;
+        width: 20%;
+    }   
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .nss-form-filter form [class^="nss-select-option"]{
+        margin-bottom: 15px;
+    }
+    .nss-content-page-products ul li{
+        margin: 0 15px;
+        width: 20%;
+    }   
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nss-form-filter form [class^="nss-select-option"]{
+        margin-bottom: 15px;
+    }
+    .nss-content-page-products ul li{
+        margin: 0 15px;
+        width: 30%;
+    }  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .nss-form-filter form [class^="nss-select-option"]{
+        margin-bottom: 15px;
+    }
+    .nss-content-page-products ul li{
+        margin: 0 15px;
+        width: 30%;
+    }    
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .nss-form-filter form [class^="nss-select-option"]{
+        margin-bottom: 15px;
+    }
+    .nss-content-page-products ul li{
+        margin: 0 15px;
+        width: 40%;
+    }  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .nss-form-filter form [class^="nss-select-option"]{
+        margin-bottom: 15px;
+    }
+    .nss-content-page-products ul li{
+        margin: 0 30px;
+        width: 70%;
+    }
+}
